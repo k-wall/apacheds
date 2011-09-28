@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+  
+  http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.apache.directory.server</groupId>
+    <artifactId>apacheds-parent</artifactId>
+    <version>1.5.7</version>
+  </parent>
+  
+  <artifactId>apacheds-all</artifactId>
+  <name>ApacheDS All</name>
+  <packaging>jar</packaging>
+
+  <dependencies>
+    <dependency>
+      <artifactId>apacheds-avl-partition</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-core</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-core-annotations</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-core-api</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-core-avl</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-core-constants</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-core-entry</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <!-- 
+    <dependency>
+      <artifactId>apacheds-core-integ</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+     -->
+     
+    <dependency>
+      <artifactId>apacheds-core-jndi</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-core-mock</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <!-- 
+    <dependency>
+      <artifactId>apacheds-http-integration</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    -->
+    
+    <dependency>
+      <artifactId>apacheds-interceptor-kerberos</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-jdbm</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-jdbm-partition</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-jdbm-store</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-kerberos-shared</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <!-- 
+    <dependency>
+      <artifactId>apacheds-kerberos-test</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+     -->
+    <dependency>
+      <artifactId>apacheds-ldif-partition</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-protocol-changepw</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-protocol-dhcp</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-protocol-dns</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-protocol-kerberos</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-protocol-ldap</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-protocol-ntp</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-protocol-shared</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-server-annotations</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <!-- 
+    <dependency>
+      <artifactId>apacheds-server-integ</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+     -->
+     
+    <dependency>
+      <artifactId>apacheds-server-jndi</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-server-replication</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <!-- 
+    <dependency>
+      <artifactId>apacheds-server-tools</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+     -->
+     
+    <dependency>
+      <artifactId>apacheds-server-xml</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-test-framework</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-utils</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-xbean-spring</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-xdbm-base</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-xdbm-search</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+    
+    <dependency>
+      <artifactId>apacheds-xdbm-tools</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <shadedArtifactAttached>true</shadedArtifactAttached>
+              <shadedClassifierName>app</shadedClassifierName>
+              <filters>
+                <filter>
+                  <artifact>bouncycastle:bcprov-jdk15</artifact>
+                  <excludes>
+                    <exclude>META-INF/BCKEY.SF</exclude>
+                    <exclude>META-INF/BCKEY.DSA</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
+              <shadedArtifactAttached>false</shadedArtifactAttached>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
