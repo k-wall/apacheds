@@ -91,10 +91,10 @@
           <groupId>org.apache.directory.shared</groupId>
           <artifactId>shared-asn1</artifactId>
         </exclusion>
-        <exclusion>
+        <!-- <exclusion>
           <groupId>org.apache.directory.shared</groupId>
           <artifactId>shared-ldap-constants</artifactId>
-        </exclusion>
+        </exclusion> -->
         <exclusion>
           <groupId>org.apache.directory.shared</groupId>
           <artifactId>shared-ldap-converter</artifactId>
