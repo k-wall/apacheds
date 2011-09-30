@@ -42,6 +42,12 @@
   <packaging>jar</packaging>  
 
   <dependencies>
+
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+    </dependency>
+    
     <!-- <dependency>
       <artifactId>apacheds-i18n</artifactId>
       <groupId>${groupId}</groupId>
