@@ -33,9 +33,9 @@
   </parent>
   
   <artifactId>apacheds-protocol-dns-jndi</artifactId>
-  <name>ApacheDS Protocol Dns</name>
+  <name>ApacheDS Protocol Dns JNDI</name>
   <description>
-    The DNS protocol provider for ApacheDS
+    The DNS-JNDI protocol provider for ApacheDS
   </description>
   <packaging>jar</packaging>  
 
@@ -47,14 +47,14 @@
     </dependency>
     
     <dependency>
-      <artifactId>apacheds-core-jndi</artifactId>
       <groupId>${groupId}</groupId>
+      <artifactId>apacheds-core-jndi</artifactId>
       <version>${version}</version>
     </dependency>
     
     <dependency>
-      <artifactId>apacheds-protocol-shared</artifactId>
       <groupId>${groupId}</groupId>
+      <artifactId>apacheds-protocol-shared</artifactId>
       <version>${version}</version>
     </dependency>
   </dependencies>
