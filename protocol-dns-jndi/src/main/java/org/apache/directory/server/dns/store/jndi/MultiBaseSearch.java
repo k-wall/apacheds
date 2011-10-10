@@ -61,6 +61,7 @@ public class MultiBaseSearch implements SearchStrategy
     private final DirectoryService directoryService;
 
 
+    @SuppressWarnings("unchecked")
     MultiBaseSearch( String catalogBaseDn, DirectoryService directoryService )
     {
         this.directoryService = directoryService;

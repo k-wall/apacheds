@@ -55,6 +55,24 @@
       <artifactId>mina-core</artifactId>
       <version>${mina.core.version}</version>
     </dependency>
+    
+    <dependency>
+      <groupId>org.apache.directory.shared</groupId>
+      <artifactId>shared-ldap-jndi</artifactId>
+      <version>0.9.19</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.directory.shared</groupId>
+      <artifactId>shared-cursor</artifactId>
+      <version>0.9.19</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.directory.shared</groupId>
+      <artifactId>shared-ldif</artifactId>
+      <version>0.9.19</version>
+    </dependency>
   </dependencies>
 
   <build>
