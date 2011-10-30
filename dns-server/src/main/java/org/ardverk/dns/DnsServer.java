@@ -17,7 +17,7 @@
  *  under the License. 
  *  
  */
-package org.apache.directory.server.dns;
+package org.ardverk.dns;
 
 
 import java.io.IOException;
@@ -88,7 +88,7 @@ public class DnsServer extends DirectoryBackedService
             DatagramAcceptor acceptor = (DatagramAcceptor)transport.getAcceptor();
 
             // Set the handler
-            acceptor.setHandler( new DnsProtocolHandler( this, store ) );
+            acceptor.setHandler( new DnsProtocolHandler( store ) );
     
             // Allow the port to be reused even if the socket is in TIME_WAIT state
             ((DatagramSessionConfig)acceptor.getSessionConfig()).setReuseAddress( true );
@@ -104,7 +104,7 @@ public class DnsServer extends DirectoryBackedService
                 IoAcceptor acceptor = transport.getAcceptor();
     
                 // Set the handler
-                acceptor.setHandler( new DnsProtocolHandler( this, store ) );
+                acceptor.setHandler( new DnsProtocolHandler( store ) );
         
                 if ( transport instanceof UdpTransport )
                 {

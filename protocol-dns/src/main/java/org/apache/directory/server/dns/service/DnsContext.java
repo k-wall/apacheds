@@ -24,7 +24,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.apache.directory.server.dns.DnsServer;
 import org.apache.directory.server.dns.messages.DnsMessage;
 import org.apache.directory.server.dns.messages.ResourceRecord;
 import org.apache.directory.server.dns.store.RecordStore;
@@ -38,7 +37,6 @@ public class DnsContext
 {
     private static final long serialVersionUID = -5911142975867852436L;
 
-    private DnsServer config;
     private RecordStore store;
     private DnsMessage reply;
     private List<ResourceRecord> records = new ArrayList<ResourceRecord>();
@@ -69,25 +67,6 @@ public class DnsContext
     {
         this.records.addAll( resourceRecords );
     }
-
-
-    /**
-     * @return Returns the config.
-     */
-    public DnsServer getConfig()
-    {
-        return config;
-    }
-
-
-    /**
-     * @param config The config to set.
-     */
-    public void setConfig( DnsServer config )
-    {
-        this.config = config;
-    }
-
 
     /**
      * @return Returns the reply.

@@ -17,7 +17,7 @@
  *  under the License. 
  *  
  */
-package org.apache.directory.server.dns;
+package org.ardverk.dns;
 
 
 import org.apache.directory.server.core.DefaultDirectoryService;
