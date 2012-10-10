@@ -43,8 +43,8 @@
     <skin.version>1.0.1</skin.version>
     
     <!-- Set versions for depending jars -->
-    <antlr.version>2.7.7</antlr.version>
-    <bcprov.version>140</bcprov.version>
+   <!--  <antlr.version>2.7.7</antlr.version> -->
+    <!-- <bcprov.version>140</bcprov.version> -->
     <commons.cli.version>1.2</commons.cli.version>
     <commons.collections.version>3.2.1</commons.collections.version>
     <commons.daemon.version>1.0.1</commons.daemon.version>
@@ -53,127 +53,20 @@
     <commons.lang.version>2.6</commons.lang.version>
     <commons.net.version>2.0</commons.net.version>
     <commons.pool.version>1.5.4</commons.pool.version>
-    <daemon.bootstrappers.version>1.1.8</daemon.bootstrappers.version>
-    <derby.version>10.4.2.0</derby.version>
-    <dnsjava.version>2.0.1</dnsjava.version>
-    <jcl.over.slf4j.version>1.5.10</jcl.over.slf4j.version>
-    <jetty.version>6.1.14</jetty.version>
-    <jug.asl.version>2.0.0.RC1</jug.asl.version>
+    <dnsjava.version>2.1.1</dnsjava.version>
     <junit.version>4.7</junit.version>
-    <ldapsdk.version>4.1</ldapsdk.version>
-    <log4j.version>1.2.14</log4j.version>
     <maven.archiver.version>2.2</maven.archiver.version>
     <maven.artifact.version>2.0.9</maven.artifact.version>
     <maven.plugin.api.version>2.0.9</maven.plugin.api.version>
     <maven.project.version>2.0.9</maven.project.version>
-    <mina.core.version>2.0.0-RC1</mina.core.version>
-    <plexus.utils.version>1.0.3</plexus.utils.version>
-    <quartz.version>1.6.0</quartz.version>
-    <slf4j.api.version>1.5.10</slf4j.api.version>
-    <slf4j.log4j12.version>1.5.10</slf4j.log4j12.version>
-    <spring.beans.version>2.5.6.SEC01</spring.beans.version>
-    <spring.context.version>2.5.6.SEC01</spring.context.version>
-    <spring.core.version>2.5.6.SEC01</spring.core.version>
-    <velocity.version>1.5</velocity.version>
-    <wrapper.version>3.2.3</wrapper.version>
-    <xbean.spring.version>3.5</xbean.spring.version>
-    <xercesImpl.version>2.9.1</xercesImpl.version>
+    <mina.core.version>2.0.5</mina.core.version>
+    <slf4j.api.version>1.6.6</slf4j.api.version>
   </properties>
 
   <url>http://directory.apache.org/apacheds/1.5</url>
 
   <dependencyManagement>
     <dependencies>
-      <!--dependency>
-        <groupId>org.apache.directory.shared</groupId>
-        <artifactId>shared-all</artifactId>
-        <version>${org.apache.directory.shared.version}</version>
-      </dependency-->
-
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldap</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldap-schema</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldap-schema-loader</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldap-schema-manager</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-cursor</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldap-jndi</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-asn1-codec</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-asn1</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-      
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldap-constants</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-      
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldap-converter</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-      
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldap-schema-dao</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-      
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-ldif</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-      
-      <!-- <dependency>
-              <groupId>org.apache.directory.shared</groupId>
-              <artifactId>shared-dsml-parser</artifactId>
-              <version>${org.apache.directory.shared.version}</version>
-            </dependency> -->
-      
-      <!-- <dependency>
-              <groupId>org.apache.directory.daemon</groupId>
-              <artifactId>daemon-bootstrappers</artifactId>
-              <version>${daemon.bootstrappers.version}</version>
-            </dependency> -->
-
       <dependency>
         <groupId>org.apache.mina</groupId>
         <artifactId>mina-core</artifactId>
@@ -192,29 +85,11 @@
         <version>${commons.collections.version}</version>
       </dependency>
 
-      <!-- <dependency>
-              <groupId>commons-daemon</groupId>
-              <artifactId>commons-daemon</artifactId>
-              <version>${commons.daemon.version}</version>
-            </dependency> -->
-
       <dependency>
         <groupId>commons-lang</groupId>
         <artifactId>commons-lang</artifactId>
         <version>${commons.lang.version}</version>
       </dependency>
-
-      <!-- <dependency>
-              <groupId>commons-cli</groupId>
-              <artifactId>commons-cli</artifactId>
-              <version>${commons.cli.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>commons-dbcp</groupId>
-              <artifactId>commons-dbcp</artifactId>
-              <version>${commons.dbcp.version}</version>
-            </dependency> -->
 
       <dependency>
         <groupId>commons-net</groupId>
@@ -237,80 +112,20 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>jcl-over-slf4j</artifactId>
-        <version>${jcl.over.slf4j.version}</version>
+        <version>${slf4j.api.version}</version>
       </dependency>
-
+  
       <dependency>
         <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-log4j12</artifactId>
-        <version>${slf4j.log4j12.version}</version>
+        <artifactId>log4j-over-slf4j</artifactId>
+        <version>${slf4j.api.version}</version>
       </dependency>
-
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>${log4j.version}</version>
-      </dependency>
-
-      <!-- <dependency>
-              <groupId>org.apache.velocity</groupId>
-              <artifactId>velocity</artifactId>
-              <version>${velocity.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>antlr</groupId>
-              <artifactId>antlr</artifactId>
-              <version>${antlr.version}</version>
-            </dependency> -->
 
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
       </dependency>
-
-      <!-- <dependency>
-              <groupId>opensymphony</groupId>
-              <artifactId>quartz</artifactId>
-              <version>$quartz.version{}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>jug</groupId>
-              <artifactId>jug-asl</artifactId>
-              <version>${jug.asl.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.derby</groupId>
-              <artifactId>derby</artifactId>
-              <version>${derby.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.apache.xbean</groupId>
-              <artifactId>xbean-spring</artifactId>
-              <version>${xbean.spring.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.springframework</groupId>
-              <artifactId>spring-core</artifactId>
-              <version>${spring.core.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.springframework</groupId>
-              <artifactId>spring-beans</artifactId>
-              <version>${spring.beans.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>org.springframework</groupId>
-              <artifactId>spring-context</artifactId>
-              <version>${spring.context.version}</version>
-            </dependency> -->
 
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -341,37 +156,12 @@
         <artifactId>maven-artifact</artifactId>
         <version>${maven.artifact.version}</version>
       </dependency>
-
-      <!-- <dependency>
-              <groupId>ldapsdk</groupId>
-              <artifactId>ldapsdk</artifactId>
-              <version>${ldapsdk.version}</version>
-            </dependency> -->
-
+      
       <dependency>
         <groupId>dnsjava</groupId>
         <artifactId>dnsjava</artifactId>
         <version>${dnsjava.version}</version>
       </dependency>
-
-      <!-- <dependency>
-              <groupId>tanukisoft</groupId>
-              <artifactId>wrapper</artifactId>
-              <version>${wrapper.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>bouncycastle</groupId>
-              <artifactId>bcprov-jdk15</artifactId>
-              <version>${bcprov.version}</version>
-            </dependency> -->
-
-      <!-- <dependency>
-              <groupId>xerces</groupId>
-              <artifactId>xercesImpl</artifactId>
-              <version>${xercesImpl.version}</version>
-            </dependency> -->
-
     </dependencies>
   </dependencyManagement>
 
@@ -388,76 +178,6 @@
   </distributionManagement>
 
   <dependencies>
-    <!--dependency>
-      <groupId>org.apache.directory.shared</groupId>
-      <artifactId>shared-all</artifactId>
-    </dependency-->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldap</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldap-schema</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldap-schema-loader</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldap-schema-manager</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-cursor</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldap-jndi</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-asn1-codec</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-asn1</artifactId>
-        </dependency> -->
-      
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldap-constants</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldap-converter</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldap-schema-dao</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-ldif</artifactId>
-        </dependency> -->
-
-    <!-- <dependency>
-          <groupId>org.apache.directory.shared</groupId>
-          <artifactId>shared-dsml-parser</artifactId>
-        </dependency> -->
-
     <!-- apacheds standard logging interface -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -468,20 +188,11 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>jcl-over-slf4j</artifactId>
-      <scope>test</scope>
     </dependency>
 
-    <!-- standard logging implementation for tests -->
     <dependency>
       <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <scope>test</scope>
+      <artifactId>log4j-over-slf4j</artifactId>
     </dependency>
     
     <!-- Most modules use commons-io in test -->
@@ -499,59 +210,10 @@
   </dependencies>
 
   <modules>
-    <!-- <module>i18n</module> -->
-    <!-- <module>all</module> -->
-    <!-- <module>utils</module> -->
-    <!-- <module>jdbm</module> -->
-    <!-- <module>jdbm-store</module> -->
-    <!-- <module>jdbm-partition</module> -->
-    <!-- <module>xdbm-base</module> -->
-    <!-- <module>xdbm-search</module> -->
-    <!-- <module>xdbm-tools</module> -->
-    <!-- <module>core</module>
-    <module>core-api</module>
-    <module>core-annotations</module> -->
-    <!-- <module>server-annotations</module> -->
-    <!-- <module>core-mock</module> -->
-    <!-- <module>core-jndi</module> -->
-    <!-- <module>core-constants</module>
-    <module>core-integ</module>
-    <module>core-entry</module> -->
-    <!-- <module>core-avl</module> -->
-    <!-- <module>avl-partition</module> -->
-    <!-- <module>ldif-partition</module> -->
     <module>protocol-shared</module>
-    <!-- <module>protocol-ntp</module> -->
-    <!-- <module>protocol-ldap</module> -->
-    <!-- <module>protocol-kerberos</module> -->
-    <!-- <module>protocol-dhcp</module> -->
     <module>protocol-dns</module>
-    <module>protocol-dns-jndi</module>
-    <!-- <module>protocol-changepw</module> -->
-    <!-- <module>server-integ</module> -->
-    <!-- <module>server-tools</module> -->
-    <!-- <module>default-config</module> -->
-    <!--Uncomment to build all in one OSGi bundle-->
-    <!--<module>osgi</module>-->
-
-    <!-- breaks the build on first try
-      <module>sar-plugin</module>
-      <module>server-sar</module>
-    -->
-
-    <!-- <module>server-xml</module> -->
-    <!-- <module>server-jndi</module> -->
-    <!-- <module>kerberos-shared</module> -->
-    <!--module>kerberos-unit</module-->
-    <!-- <module>interceptor-kerberos</module> -->
-    <!-- <module>kerberos-test</module> -->
-    <!--module>syncrepl</module-->
-    <!-- <module>server-replication</module> -->
-    <!-- <module>xbean-spring</module> -->
-    <!-- <module>http-integration</module> -->
-    <!-- <module>test-framework</module> -->
-    
     <module>dns-server</module>
+    <module>dns-stubs</module>
   </modules>
 
   <build>

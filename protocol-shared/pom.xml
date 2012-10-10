@@ -38,25 +38,31 @@
   <packaging>jar</packaging>
 
   <dependencies>
-    <dependency>
+    <!-- <dependency>
       <artifactId>apacheds-i18n</artifactId>
       <groupId>${groupId}</groupId>
       <version>${version}</version>
-    </dependency>
+    </dependency> -->
 
-    <dependency>
+    <!-- <dependency>
       <artifactId>apacheds-core</artifactId>
       <groupId>${groupId}</groupId>
       <version>${version}</version>
+    </dependency> -->
+    
+    <dependency>
+      <artifactId>dns-stubs</artifactId>
+      <groupId>${groupId}</groupId>
+      <version>${version}</version>
     </dependency>
-
+    
     <dependency>
       <groupId>org.apache.mina</groupId>
       <artifactId>mina-core</artifactId>
       <version>${mina.core.version}</version>
     </dependency>
     
-    <dependency>
+    <!-- <dependency>
       <groupId>org.apache.directory.shared</groupId>
       <artifactId>shared-ldap-jndi</artifactId>
       <version>0.9.19</version>
@@ -72,7 +78,7 @@
       <groupId>org.apache.directory.shared</groupId>
       <artifactId>shared-ldif</artifactId>
       <version>0.9.19</version>
-    </dependency>
+    </dependency> -->
   </dependencies>
 
   <build>
